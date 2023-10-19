@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Shift, Mounth, Worker
+from .models import Shift, Worker
 
 class WorkerSerializer(serializers.ModelSerializer):
     class Meta:

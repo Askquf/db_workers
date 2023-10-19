@@ -3,6 +3,7 @@
 2) В терминале прописать pip install -r requirmants.txt.
 3) Прописать команду createdb -U postgres db_workers
 4) В settings.py установить пароль и настройки для БД.
+5) Прописать команду python manage.py migrate
 5) Прописать команду python manage.py runserver
  
 

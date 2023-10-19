@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 import datetime
-from workers.models import Worker, Mounth, Shift
+from workers.models import Worker, Shift
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
@@ -64,6 +64,6 @@ class Command(BaseCommand):
         for i, worker in enumerate(workers):
             for j, mounth in enumerate(worker):
                 for shift in mounth:
-                    Shift.save(Shift(worker_id=start_id+i, mounth_id=j+1, date=shift))
+                    Shift.save(Shift(worker_id=start_id+i, date=shift))
 
 
